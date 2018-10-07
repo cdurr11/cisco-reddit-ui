@@ -18,7 +18,7 @@ class App extends Component {
     //catches if the value entered is not a number
       event.preventDefault();
       if (isNaN(this.state.NumberValue) === false) {
-        const url = 'http://www.reddit.com/r/' + this.state.value.trim() + '/top/.json?limit=' + this.state.NumberValue;
+        const url = 'https://www.reddit.com/r/' + this.state.value.trim() + '/top/.json?limit=' + this.state.NumberValue;
         const data = fetch(url).then(response => response.json()).then(obj => this.parseAPIData(obj));
       }
 

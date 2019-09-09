@@ -1,4 +1,4 @@
-** Reddit API GUI **
+## Reddit API GUI
 
 This application was built using the React.js library.
 
